@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    char a;
+    int b;
+    printf("Enter character to check UPPERCASE/lowercase");
+    scanf("%c", &a);
+    if (b= (a>=65 && a<=90) || (a>=97 && a<=122))
+    {
+        if (b= (a>=65 && a<=90) )
+        printf("UPPERCASE");
+        else
+        printf("lowercase");
+    }
+    else
+    printf("InVaLiD");
+    return 0;
+}
