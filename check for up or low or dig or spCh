@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    char a;
+    int b;
+    printf("Enter character to check UPPERCASE/lowercase");
+    scanf("%c", &a);
+    if (b= (a>=65 && a<=90) || (a>=97 && a<=122))
+    {
+        if (b= (a>=65 && a<=90) )
+        printf("UPPERCASE");
+        else
+        printf("lowercase");
+    }
+    if (b=(a>=49 && a<=57))
+    printf("diGiTs");
+    if (b= (a>=32 && a<=47) || (a>=58 && a<=64) || (a>=91 && a<=96) || (a>=123 && a<=126))
+    printf("SPECIAL characters");
+    return 0;
+}
