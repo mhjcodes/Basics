@@ -2,7 +2,7 @@
 int main()
 {
     float a,b,c,d,e,g;
-    printf("marks in eng,chem,bio,mat,phy");
+    printf("marks in eng chem bio mat phy");
     scanf("%f%f%f%f%f",&a,&b,&c,&d,&e);
     if((a>=0 && a<=100) && (b>=0 && b<=100) && (c>=0 && c<=100) && (d>=0 && d<=100) && (e>=0 && e<=100))
     {
