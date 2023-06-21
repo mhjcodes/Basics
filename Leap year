@@ -22,3 +22,42 @@ int main()
     }
     return 0;
 }
+
+
+
+method 2
+
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a year");
+    scanf("%d",&a);
+    if(a%100)
+        a%4?printf("Not a leap year"):printf("Leap year");
+    else
+        a%400?printf("Not a leap year"):printf("Leap year");
+    return 0;
+}
+
+
+
+method 3
+
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a year");
+    scanf("%d",&a);
+    if(a%100)
+        printf(a%4?"Not a leap year":"Leap year");
+    else
+        printf(a%400?"Not a leap year":"Leap year");
+    return 0;
+}
+
+
+
