@@ -102,12 +102,26 @@ int main()
 method 2(ev ev more opt)
 
 
-#include<stdio.h>
+#include<stdio.h>                                                                     
 int main()
 {
     int a,b,c;
     printf("Enter three numbers");
     scanf("%d %d %d",&a,&b,&c);
     printf("%d",a>b?a>c?a:c:b>c?b:c);
+    return 0;
+}
+
+
+method 2(ev ev more opt)    - bracket version
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers");
+    scanf("%d %d %d",&a,&b,&c);
+    printf("%d",a>b?(a>c?a:c):(b>c?b:c));
     return 0;
 }
