@@ -60,4 +60,15 @@ int main()
 }
 
 
+method 3 (short)
 
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a year");
+    scanf("%d",&a);
+    printf(a%100?(a%4?"Not a leap year":"Leap year"):(a%400?"Not a leap year":"Leap year"));
+    return 0;
+}
