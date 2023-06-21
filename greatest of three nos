@@ -97,3 +97,17 @@ int main()
     a>b?printf("%d",a>c?a:b):printf("%d",b>c?b:c);
     return 0; 
 }
+
+
+method 2(ev ev more opt)
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers");
+    scanf("%d %d %d",&a,&b,&c);
+    printf("%d",a>b?a>c?a:c:b>c?b:c);
+    return 0;
+}
