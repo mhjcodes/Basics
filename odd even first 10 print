@@ -1,0 +1,76 @@
+
+first 10 odd no print
+
+
+#include<stdio.h>
+int main()
+{
+   int a=1;
+   int n=1;
+   
+    while (a<19)
+    {
+        a=2*n-1;
+        printf("%d ",a);
+        n++;
+    }
+    return 0;
+}
+
+
+reverse first 10 odd no
+
+
+#include<stdio.h>
+int main()
+{
+   int a=10;
+   int n;
+
+   
+    while (n>1)
+    {
+        n=2*a-1;
+        printf("%d ",n);
+        a--;
+    }
+    return 0;
+}
+
+
+first 10 even no
+
+
+#include<stdio.h>
+int main()
+{
+   int a=1;
+   int n;
+    while (a<=10)
+    {
+        n=2*a;
+        printf("%d ",n);
+        a++;
+    }
+    return 0;
+}
+
+
+reverse 10 even no
+
+
+#include<stdio.h>
+int main()
+{
+   int a=10;
+   int n;
+    while (a>=1)
+    {
+        n=2*a;
+        printf("%d ",n);
+        a--;
+    }
+    return 0;
+}
+
+
