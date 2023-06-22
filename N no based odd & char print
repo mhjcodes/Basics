@@ -1,0 +1,100 @@
+ N no based name print
+
+
+#include<stdio.h>
+int main()
+{
+   int a;
+   int n=1;
+   printf("Enter no");
+   scanf("%d",&a);
+
+    while (n<=a)
+    {
+        printf("Minhaj\n",n);
+        n++;
+    }
+    return 0;
+}
+
+
+first N no natural no
+
+
+#include<stdio.h>
+int main()
+{
+   int a;
+   int n=1;
+   printf("Enter no");
+   scanf("%d",&a);
+
+    while (n<=a)
+    {
+        printf("%d ",n);
+        n++;
+    }
+    return 0;
+}
+
+first N no off no
+
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   int a=1;
+   int c;
+   printf("Enter no");
+   scanf("%d",&n);
+
+    while (a<=n)
+    {
+        c= 2*a-1;
+        printf("%d ",c);
+        a++;
+    }
+    return 0;
+}
+
+
+print a table of N
+
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   int a=1;
+   int c;
+   printf("Enter no");
+   scanf("%d",&n);
+    while (a<=n)
+    {
+        c= n*a;
+        printf("%d ",c);
+        a++;
+    }
+    return 0;
+}
+
+
+print N odd reverse
+
+
+#include<stdio.h>
+int main()
+{
+   int n,a,c;
+   printf("Enter no");
+   scanf("%d",&n);
+   a=n;
+    while (a>=1)
+    {
+        c= 2*a-1;
+        printf("%d ",c);
+        a--;
+    }
+    return 0;
+}
