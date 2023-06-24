@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+     int i;
+     scanf("%d",&i);
+     if(i%3==0 && i%5==0)
+     printf("FizzBuzz");
+     else
+     {
+         if(i%3 && i%5)
+         printf("%d",i);
+         else
+         {
+             if(i%3)
+             printf("Buzz");
+             else
+             printf("Fizz");
+         }
+     }
+     return 0;
+}
