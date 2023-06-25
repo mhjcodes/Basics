@@ -22,3 +22,27 @@ int main()
     printf("You win");
     return 0;
 }
+
+
+opt soln
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    for(a=1;a<=3;a++)
+    {
+      printf("Enter even no");
+      scanf("%d",&b);
+      if (b%2==0)
+      break;
+    }
+    if (a==4)
+    printf("Game over");
+    else
+    printf("You win");
+    return 0;
+
+}
