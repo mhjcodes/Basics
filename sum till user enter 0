@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int b,a=0;
+    printf("Enter no to add till u enter zero:");
+    while(1)
+    {
+        scanf("%d",&b);
+        if(b==0)
+           break;
+        a=a+b;
+    }
+    printf("Sum is %d",a);
+    return 0;
+}
