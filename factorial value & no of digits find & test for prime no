@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    int a,i,b=1;
+    printf("Enter no");
+    scanf("%d",&a);
+    for(i=a;i>=1;i--)
+    b=b*i;
+    printf("factorial of %d is %d",a,b);
+    return 0;
+
+}
+
+
+no of digits finding
+
+
+#include<stdio.h>
+int main()
+{
+    int a,x=0;
+    printf("Enter no");
+    scanf("%d",&a);
+    while(a)
+    {
+     a=a/10;
+     x++;
+    } 
+    printf("%d",x);
+    return 0;
+}
+
+
+test for prime no
+
+
+#include<stdio.h>
+int main ()
+{
+    int a,b,c=0;
+    printf("Enter no");
+    scanf("%d",&a);
+    for(b=1;b<=a;b++)
+    {
+        if(a%b==0)
+        c++;
+    }
+    if (c==2)
+    printf("Prime no");
+    else
+    printf("Not a prime no");
+    return 0;
+}
