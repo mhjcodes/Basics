@@ -1,0 +1,41 @@
+Lcm of two no
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter two numbers");
+    scanf("%d %d",&a,&b);
+    c= (a>b)?a:b;
+    if (c%a==0 && c%b==0)
+        printf("LCM of two nos is %d",c);
+    else
+    {
+        c= a*b;
+        printf("LCM of two nos is %d",c);
+    }
+    return 0;
+}
+
+
+reverse order of no
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter two numbers");
+    scanf("%d %d",&a,&b);
+    c= (a>b)?a:b;
+    if (c%a==0 && c%b==0)
+        printf("LCM of two nos is %d",c);
+    else
+    {
+        c= a*b;
+        printf("LCM of two nos is %d",c);
+    }
+    return 0;
+}
