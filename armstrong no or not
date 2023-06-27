@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,a,b,c=0,sum=0;
+    printf("Enter a no");
+    scanf("%d",&n);
+    a=n;
+    while(a)
+    {
+        a=a/10;
+        c++;
+    }
+    a=n;
+    while(a)
+    {
+        b=a%10;
+        sum= sum+ pow(b,c);
+        a=a/10;
+    }
+    if(sum==n)
+    printf("Armstrong no");
+    else
+    printf("Not a armstrong no");
+    return 0;
+}
