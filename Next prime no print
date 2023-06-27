@@ -1,0 +1,24 @@
+Next prime no print
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,e;
+    printf("Enter a no");
+    scanf("%d",&a);
+    for(b=a+1;1;b++)
+    {
+        e=0;
+        for(c=1;c<=b;c++)
+        {
+            if(b%c==0)
+            e++;
+            
+        }
+        if(e==2)
+        break;
+    }
+    printf("%d",b);
+    return 0;
+}
