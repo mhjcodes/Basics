@@ -1,0 +1,34 @@
+first N natural no
+
+
+
+#include<stdio.h>
+int main()
+{
+   int a=1,n;
+   printf ("Enter no ");
+   scanf("%d",&n);
+
+    while (a<=n)
+    {
+        printf("%d ",a);
+        a++;
+    }
+    return 0;
+}
+
+
+table of 5
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    for(a=1;a<=12;a++)
+    {
+       b= 5*a;
+       printf("5*%d=%d\n",a,b);
+    }
+    return 0;
+
+}
