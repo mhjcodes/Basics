@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int b,a,c=0,n,sum=0,e,f;
+    printf("Enter no");
+    scanf("%d",&b);
+    a=b;
+    while(a)
+    {
+        a=a/10;
+        c++;
+    }
+        for(e=c;e>=1;e--)
+        {
+            for(a=b;a>1;a--)
+            {
+                f=a;
+                while(a)
+               {
+                n=a%10;
+                sum= sum+pow(n,e);
+                a=a/10;
+               }
+               if(sum==f)
+               printf("%d ",sum);
+               sum=0;
+               a=f;
+            }
+        }
+    return 0;
+}
