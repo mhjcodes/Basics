@@ -18,16 +18,18 @@ int main()
 }
 
 
-table of 5
+table of N
 
 #include<stdio.h>
 int main()
 {
-    int a,b;
+    int a,b,n;
+    printf("Enter a no");
+    scanf("%d",&n);
     for(a=1;a<=12;a++)
     {
-       b= 5*a;
-       printf("5*%d=%d\n",a,b);
+       b= n*a;
+       printf("%d*%d=%d\n",n,a,b);
     }
     return 0;
 
