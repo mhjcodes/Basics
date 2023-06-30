@@ -28,6 +28,84 @@ int main()
 
 
 
+
+A B C D E 
+  A B C D
+    A B C
+      A B
+        A
+
+
+soln
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b=0,j,i,e;
+    for(i=1;i<=5;i++)
+    {
+        a=65;
+        for(j=1;j<=5;j++)
+        {
+          if(b)
+           {
+            printf("  ");
+            b--;
+           }
+          else
+           {
+            printf("%c ",a);
+            a++;
+           }
+        }
+        for(e=1;e<=i;e++)
+        b++;
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+A B C D E 
+  B C D E
+    C D E
+      D E 
+        E
+
+soln
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b=0,j,i,e,u;
+    for(i=1;i<=5;i++)
+    {
+        a=65;
+        for(u=2;u<=i;u++)
+        a++;
+        for(j=1;j<=5;j++)
+        {
+          if(b)
+           {
+            printf("  ");
+            b--;
+           }
+          else
+           {
+            printf("%c ",a);
+            a++;
+           }
+        }
+        for(e=1;e<=i;e++)
+        b++;
+        printf("\n");
+    }
+    return 0;
+}
+
 *****
 ****
 ***
