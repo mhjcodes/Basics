@@ -200,3 +200,43 @@ int main()
     }
     return 0;
 }
+
+
+
+
+1   
+21
+321
+4321
+
+soln
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,a,b=1,f;
+    for(i=1;i<=4;i++)
+    {
+        a=b;
+        for(f=2;f<=i;f++)
+        {
+            a++;
+        }
+        for(j=1;j<=4;j++)
+        {
+            if(j<=i)
+            {
+                printf("%d",a);
+                b=a;
+                if(j>=1)
+                a--;
+            }
+            else
+            printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
