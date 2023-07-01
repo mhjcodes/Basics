@@ -18,6 +18,26 @@ int main()
     return 0;
 }
 
+lcm soln 2
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter two nos");
+    scanf("%d %d",&a,&b);
+    for((c=a>b?a:b);c<=a*b;c++)
+    {
+        if(c%a==0 && c%b==0)
+        {
+        printf("LCM is %d",c);
+        break;
+        }
+    }
+    return 0;
+}
+
 
 reverse order of no
 
