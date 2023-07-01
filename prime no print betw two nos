@@ -22,3 +22,28 @@ int main()
     }
     return 0;
 }
+
+
+prime no test
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,i;
+    printf("Enter a no");
+    scanf("%d",&a);
+    for(i=2;i<=a-1;i++)
+    {
+         if(a%i==0)
+         {
+            printf("Not a Prime no");
+            break;
+         }
+
+    }
+    if(i==a)
+    printf("Prime no");
+    return 0;
+}
