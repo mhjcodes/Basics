@@ -4,18 +4,18 @@ fibancci Nth term
 #include<stdio.h>
 int main()
 {
-    int a=0,b=1,c,i,n;
-    printf("Enter no");
+    int a=1,b=0,i,c,n;
+    printf("Enter a no");
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(i=0;i<=n;i++)
     {
-        c=a+b;
-        a=b;
-        b=c;
-
+      c=a+b;
+      a=b;
+      b=c;
     }
-    printf("%d ",a);
+    printf("%d",a);
     return 0;
+
 }
 
 
