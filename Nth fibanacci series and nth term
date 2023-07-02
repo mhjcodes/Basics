@@ -42,3 +42,38 @@ int main()
 
 
 
+N no in fibnacci series check
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a=-1,b=1,c,i,n,u=-1;
+    printf("Enter no");
+    scanf("%d",&n);
+    for(i=1; ;i++)
+    {
+      c=a+b;
+      u++;
+      if(c==n)
+      {
+         printf("%d is in the series & its %d term",n,u);
+         break;
+      }
+      if(c>n)
+      {
+        printf("%d is not in the series",n);
+        break;
+      }
+      a=b;
+      b=c;
+    }
+    return 0;
+}
+
+
+
+
+
