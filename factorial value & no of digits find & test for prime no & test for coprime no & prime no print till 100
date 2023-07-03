@@ -56,7 +56,7 @@ int main ()
 }
 
 
-test for coprime no
+test for two no whether they both prime or not
 
 
 
@@ -82,6 +82,37 @@ int main ()
     printf("Not a coprime no");
     return 0;
 }
+
+
+
+test for coprime nos
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,a,b,l=1;
+    printf("Enter two numbers");
+    scanf("%d %d",&a,&b);
+    i=b>a?a:b;
+    while(i>=2)
+    {
+      if(a%i==0 && b%i==0)
+      {
+        l=l*i;
+        break;
+      }
+      else
+      i--;
+    }
+    if(l==1)
+    printf("coprime no");
+    if(l>1)
+    printf("not a Coprime no");
+    return 0;
+}
+
 
 
 print all prime no till 100
