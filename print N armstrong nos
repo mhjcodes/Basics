@@ -30,3 +30,34 @@ int main()
         }
     return 0;
 }
+
+
+method 2
+
+
+
+#include<stdio.h>
+int main()
+{
+  int a,b,j,h,i,d,sum;
+  for(a=1;a<=10000;a++)
+  {
+    b=a;
+    sum=0,j=0;
+    while(b)
+   {
+    b/=10;
+    j++;
+   }
+   for(b=a;b;b/=10)
+   {
+    d=b%10;
+    for(i=1,h=1;i<=j;i++)
+     h=h*d;
+    sum= sum+ h;
+   }
+   if(sum==a)
+   printf("%d ",a);
+  }
+   return 0;
+}
