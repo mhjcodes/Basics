@@ -438,3 +438,42 @@ void f1()
       printf("\n");
     }
 }
+
+
+input lines based soln 3
+
+
+
+#include<stdio.h>                                                            
+void f1(int);
+int main()
+{
+  int n;
+  printf("Enter no of lines");
+  scanf("%d",&n);
+  f1(n);
+  return 0;
+}
+void f1(int lines)
+{
+    int i,j,k;
+    for(i=1;i<=lines;i++)
+    {
+      k=i;
+      for(j=1;j<=2*lines-1;j++)
+      {
+        if(j>=lines+1-i && j<=lines-1+i)
+        {
+          while(k)
+          {
+            printf("*");
+            printf(" ");
+            k--;
+          }
+        }
+        else
+        printf(" ");
+      }
+      printf("\n");
+    }
+}
