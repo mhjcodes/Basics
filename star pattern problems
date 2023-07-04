@@ -735,3 +735,47 @@ void f1()
     }
 }
 
+
+gen soln 
+
+
+#include<stdio.h>                                                            
+void f1(int);
+int main()
+{
+  int n;
+  printf("Enter lines");
+  scanf("%d",&n);
+  f1(n);
+  return 0;
+}
+void f1(int lines)
+{
+    int i,j,k,h;
+    for(i=1;i<=lines;i++)
+    {
+      k=1;
+      h=1;
+      for(j=1;j<=2*lines-1;j++)
+      {
+        if(j>=lines+1-i && j<=lines-1+i)
+        {
+          if(k)
+          {
+           printf("%d",h);
+           j<lines?h++:h--;
+          }
+          else
+          {
+            printf(" ");
+            if(j==lines)
+            h--;
+          } 
+          k=1-k;
+        }
+        else
+        printf(" ");    
+      }
+       printf("\n");
+    }
+}
