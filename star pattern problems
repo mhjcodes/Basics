@@ -684,3 +684,54 @@ void f1()
       printf("\n");
     }
 }
+
+
+    1    
+   1 1
+  1 2 1
+ 1 2 2 1
+1 2 3 2 1
+
+
+soln
+
+
+
+#include<stdio.h>                                                            
+void f1();
+int main()
+{
+  f1();
+  return 0;
+}
+void f1()
+{
+    int i,j,k,h;
+    for(i=1;i<=5;i++)
+    {
+      k=1;
+      h=1;
+      for(j=1;j<=9;j++)
+      {
+        if(j>=6-i && j<=4+i)
+        {
+          if(k)
+          {
+           printf("%d",h);
+           j<5?h++:h--;
+          }
+          else
+          {
+            printf(" ");
+            if(j==5)
+            h--;
+          } 
+          k=1-k;
+        }
+        else
+        printf(" ");    
+      }
+       printf("\n");
+    }
+}
+
