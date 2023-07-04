@@ -523,3 +523,41 @@ void f1()
       printf("\n");
     }
 }
+
+
+
+ABCDEFG
+ ABCDE
+  ABC
+   A
+
+soln
+
+
+#include<stdio.h>
+void f1();
+int main()
+{
+  f1();
+  return 0;
+}
+void f1()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=4;i++)
+    {
+      k=65;
+      for(j=1;j<=7;j++)
+      {
+        if(j>=i && j<=8-i)
+        {
+          printf("%c",k);
+          k++;
+        }
+        else
+        printf(" ");
+      }
+      printf("\n");
+    }
+}
