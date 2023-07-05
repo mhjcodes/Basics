@@ -783,9 +783,9 @@ void f1(int lines)
 
 
 1234567
-123 567
-12   67
-1     7
+123 321
+12   21
+1     1
 
 soln
 
@@ -803,14 +803,19 @@ void f1()
     int i,j,k,h;
     for(i=1;i<=4;i++)
     {
-      k=1;
       h=1;
       for(j=1;j<=7;j++)
       {
         if(j<=5-i || j>=3+i)
-            printf("%d",j);
+            {
+              printf("%d",h);
+              j<4?h++:h--;
+            }
         else
-          printf(" ");    
+          {
+            printf(" ");
+            j<4?h++:h--;
+          }
       }
        printf("\n");
     }
@@ -818,10 +823,10 @@ void f1()
 
 
 
-ABCDEFG
-ABC DEF
-AB   CD
-A     B
+ABCDCBA
+ABC CBA
+AB   BA
+A     A
 
 soln
 
@@ -838,16 +843,19 @@ void f1()
     int i,j,k,h;
     for(i=1;i<=4;i++)
     {
-      k=65;
+      h=65;
       for(j=1;j<=7;j++)
       {
         if(j<=5-i || j>=3+i)
             {
-              printf("%c",k);
-              k++;
+              printf("%c",h);
+              j<4?h++:h--;
             }
         else
-          printf(" ");    
+          {
+            printf(" ");
+            j<4?h++:h--;
+          }
       }
        printf("\n");
     }
