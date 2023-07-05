@@ -1,0 +1,49 @@
+no of days in month using switch case
+
+
+#include<stdio.h>
+int main()
+{
+ while(1)
+ {
+  int n;
+  printf("\n\n1.January\n");
+  printf("2.February\n");
+  printf("3.March\n");
+  printf("4.April\n");
+  printf("5.May\n");
+  printf("6.June\n");
+  printf("7.July\n");
+  printf("8.August\n");
+  printf("9.September\n");
+  printf("10.October\n");
+  printf("11.November\n");
+  printf("12.December\n\n");
+  printf("Enter month no:");
+  scanf("%d",&n);
+  switch(n)
+  {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+    printf("31days");
+    break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+    printf("30days");
+    break;
+    case 2:
+    printf("28/29days");
+    break;
+    default:
+    printf("Invalid entry");
+  }
+ }
+ return 0;
+}
