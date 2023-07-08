@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n;
+    printf("Enter a no:");
+    scanf("%d",&n);
+   switch(n)
+   {
+    case 1 ... 49 :
+    printf("Grade F");
+    printf("\n");
+    break;
+    case 50 ... 59 :
+    printf("Grade E");
+    printf("\n");
+    break;
+    case 60 ... 69 :
+    printf("Grade D");
+    printf("\n");
+    break;
+    case 70 ... 79 :
+    printf("Grade C");
+    printf("\n");
+    break;
+    case 80 ... 89 :
+    printf("Grade B");
+    printf("\n");
+    break;
+    case 90 ... 100 :
+    printf("Grade A");
+    printf("\n");
+    break;
+    default :
+    printf("Invalid entry\n\n");
+   }
+ return 0;
+}
