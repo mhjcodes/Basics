@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  while(1)
+  {
+    int n,a,b,c,d;
+    printf("\n1.Isosceles triangle check\n");
+    printf("2.Right triangle check\n");
+    printf("3.Equilateral triangle check\n");
+    printf("4.Exit\n\n");
+    printf("Select an option:");
+    scanf("%d",&n);
+   switch(n)
+   {
+    case 1:
+    printf("Enter three nos");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a==b || b==c || a==c)
+    printf("Test pass");
+    else
+    printf("Test fail");
+    printf("\n");
+    break;
+    case 2:
+    printf("Enter three nos");
+    scanf("%d %d %d",&a,&b,&c);
+    if(c*c== a*a+ b*b || b*b==a*a+ c*c || a*a== c*c + b*b)
+    printf("Test pass");
+    else
+    printf("Test fail");
+    printf("\n");
+    break;
+    case 3:
+    printf("Enter three nos");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a==b & b==c)
+    printf("Test pass");
+    else
+    printf("Test fail");
+    printf("\n");
+    case 4:
+    break;
+    default :
+    printf("Invalid entry\n\n");
+   }
+   if(n==4)
+   break;
+  }
+ return 0;
+}
