@@ -1,0 +1,66 @@
+program 1
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,a;
+    printf("1.Factorial of a no\n");
+    printf("2.Check even or odd\n");
+    printf("3.Area of circle\n");
+    printf("4.Sum of first N natural no\n");
+    printf("5.Exit\n");
+    printf("\nSelect an option:");
+    scanf("%d",&n);
+   switch(n)
+   {
+    case 1 :
+    int m=1;
+    printf("Enter a no");
+    scanf("%d",&a);
+    while(a)
+    {
+       m=m*a;
+       a--;
+    }
+    printf("%d",m);
+    printf("\n");
+    break;
+    case 2 :
+    int h;
+    printf("Enter a no");
+    scanf("%d",&h);
+    if(h%2)
+    printf("Odd");
+    else
+    printf("Even");
+    printf("\n");
+    break;
+    case 3 :
+    float u;
+    printf("Enter radius");
+    scanf("%d",&a);
+    u= 3.14*a*a;
+    printf("Area of circle is %f",u);
+    printf("\n");
+    break;
+    case 4 :
+    int r=0;
+    printf("Enter a no");
+    scanf("%d",&a);
+    while(a)
+    {
+      r=r+a;
+      a--;
+    }
+    printf("%d",r);
+    printf("\n");
+    break;
+    case 5 :
+    break;
+    default :
+    printf("Invalid entry\n\n");
+   }
+ return 0;
+}
