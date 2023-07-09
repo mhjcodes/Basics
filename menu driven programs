@@ -70,68 +70,72 @@ program 2
 #include<stdio.h>
 int main()
 {
-    int a;
-    printf("1.LCM of two nos\n");
-    printf("2.Sum of digits of no\n");
-    printf("3.Volume of cuboid\n");
-    printf("4.Prime no check\n");
-    printf("5.Exit\n");
-    printf("\nSelect an option:");
-    scanf("%d",&a);
-   switch(a)
-   {
-    case 1 :
-    int m,n,c;
-    printf("Enter two nos");
-    scanf("%d %d",&m,&n);
-    for((c=m>n?m:n);c<=m*n;c++)
+    while(1)
     {
-      if(c%m==0 && c%n==0)
-      {
-        printf("%d",c);
+        int a;
+        printf("1.LCM of two nos\n");
+        printf("2.Sum of digits of no\n");
+        printf("3.Volume of cuboid\n");
+        printf("4.Prime no check\n");
+        printf("5.Exit\n");
+        printf("\nSelect an option:");
+        scanf("%d",&a);
+    switch(a)
+    {
+        case 1 :
+        int m,n,c;
+        printf("Enter two nos");
+        scanf("%d %d",&m,&n);
+        for((c=m>n?m:n);c<=m*n;c++)
+        {
+        if(c%m==0 && c%n==0)
+        {
+            printf("%d",c);
+            break;
+        }
+        }
+        printf("\n");
         break;
-      }
-    }
-    printf("\n");
-    break;
-    case 2 :
-    int f=0,h;
-    printf("Enter a no");
-    scanf("%d",&h);
-    while(h)
-    {
-      f= f+h%10;
-      h/=10;
-    }
-    printf("Sum of digits is %d",f);
-    break;
-    case 3:
-    int v,k,j,d;
-    printf("Enter three side lengths");
-    scanf("%d %d %d",&k,&j,&d);
-    v=k*j*d;
-    printf("Volume of cuboid is %d",v);
-    printf("\n");
-    break;
-    case 4:
-    int t,e;
-    printf("Enter no");
-    scanf("%d",&t);
-    for(e=2;e<=t-1;e++)
-    {
-      if(t%e==0)
-      {
-        printf("Not a prime no");
+        case 2 :
+        int f=0,h;
+        printf("Enter a no");
+        scanf("%d",&h);
+        while(h)
+        {
+        f= f+h%10;
+        h/=10;
+        }
+        printf("Sum of digits is %d",f);
         break;
-      }
+        case 3:
+        int v,k,j,d;
+        printf("Enter three side lengths");
+        scanf("%d %d %d",&k,&j,&d);
+        v=k*j*d;
+        printf("Volume of cuboid is %d",v);
+        printf("\n");
+        break;
+        case 4:
+        int t,e;
+        printf("Enter no");
+        scanf("%d",&t);
+        for(e=2;e<=t-1;e++)
+        {
+        if(t%e==0)
+        {
+            printf("Not a prime no");
+            break;
+        }
+        }
+        if(e==t)
+        printf("Prime no");
+        printf("\n");
+        case 5 :
+        break;
+        default :
+        printf("\nInvalid entry");
     }
-    if(e==t)
-    printf("Prime no");
-    printf("\n");
-    case 5 :
-    break;
-    default :
-    printf("\nInvalid entry");
-   }
+    }
    return 0;
 }
+
