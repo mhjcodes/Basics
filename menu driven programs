@@ -31,10 +31,7 @@ int main()
     int h;
     printf("Enter a no");
     scanf("%d",&h);
-    if(h%2)
-    printf("Odd");
-    else
-    printf("Even");
+    h&1?printf("Odd"):printf("Even");
     printf("\n");
     break;
     case 3 :
