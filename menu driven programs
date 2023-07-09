@@ -106,10 +106,10 @@ int main()
     printf("Sum of digits is %d",f);
     break;
     case 3:
-    int k,v;
-    printf("Side length");
-    scanf("%d",k);
-    v= k*k*k;
+    int v,k,j,d;
+    printf("Enter three side lengths");
+    scanf("%d %d %d",&k,&j,&d);
+    v=k*j*d;
     printf("Volume of cuboid is %d",v);
     printf("\n");
     break;
