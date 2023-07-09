@@ -95,25 +95,15 @@ int main()
     printf("\n");
     break;
     case 2 :
-    int f,h,p,i=0,l=0;
+    int f=0,h;
     printf("Enter a no");
     scanf("%d",&h);
-    p=h;
     while(h)
     {
-      i++;
-      h=h/10;
+      f= f+h%10;
+      h/=10;
     }
-    h=p;
-    for(f=1;f<=i;f++)
-    {
-       h=h%10;
-       l=l+h;
-       h=p;
-       h=h/10;
-       p=h;
-    }
-    printf("Sum of digits is %d",l);
+    printf("Sum of digits is %d",f);
     break;
     case 3:
     int k,v;
