@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+int f1(char s[]);  
+int main()
+{  
+   char i, str[20]= "bhopal";
+   i =f1("bhopal");
+   printf("Last character of is %c",i);
+   
+   return 0;    
+}  
+int f1(char s[])
+{
+    return s[strlen(s)-1];
+} 
