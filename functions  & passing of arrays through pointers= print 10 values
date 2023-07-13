@@ -1,0 +1,17 @@
+#include<stdio.h>
+void input(int *p, int n );
+int main()
+{
+    int a[10];
+    input (a,10);
+    return 0;
+}
+void input(int *p, int n)
+{
+    int i;
+    printf("Enter %d values",n);
+    for(i=0;i<n;i++)
+    scanf("%d",p+i);   /* &p[i] is same as p+i */
+    for(i=0;i<n;i++)
+    printf("%d",*(p+i));  
+}
