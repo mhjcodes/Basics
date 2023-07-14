@@ -1,0 +1,49 @@
+method 1
+
+
+#include<stdio.h>
+#include<string.h>
+int length (char *p);
+int main()
+{
+    int l;
+    char str[10];
+    printf("Enter a word of length less than 10");
+    fgets(str,10,stdin);
+    l= length(str);
+    printf("Length of %s is %d",str,l);
+    return 0;
+}
+int length (char *p)
+{
+    int h;
+    p[strlen(p)-1]= '\0';
+    return strlen(p);
+
+
+}
+
+method 2
+
+
+#include<stdio.h>
+#include<string.h>
+int length (char *p);
+int main()
+{
+    int l;
+    char str[10];
+    printf("Enter a word of length less than 10");
+    fgets(str,10,stdin);
+    l= length(str);
+    printf("Length of %s is %d",str,l);
+    return 0;
+}
+int length (char *p)
+{
+    int h;
+    for(h=0;*(p+h);h++);
+    p[h-1]= '\0';
+    for(h=0;*(p+h);h++);
+    return h;
+}
