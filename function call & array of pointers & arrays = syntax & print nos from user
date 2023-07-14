@@ -73,7 +73,7 @@ void display(int **u, int n, int size[])
     for(k=0;k<n;k++)
     {
         for(g=0;g<size[k];g++)
-        printf("%d ",u[k][g]);
+        printf("%d ",u[k][g]);                       /*    *(*(u+k)+g) also can be used      */
         printf("\n");
     }
 }
