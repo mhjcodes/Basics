@@ -10,7 +10,7 @@ int main()
 }
 void f1(int b[][4], int row )                               /* u cant kali chod column */
 {
-    int i,j;
+    int i,j;                                                /* for 3d last ke dho bracket bare honi chahiye*/
     for(i=0;i<row;i++)
     {
         for(j=0;j<4;j++)
