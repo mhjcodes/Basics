@@ -39,8 +39,8 @@ int main()
     printf("Length of %s is %d",str,l);
     return 0;
 }
-int length (char *p)
-{
+int length (char *p)         /* p[] can also be used in place *p*/
+{                            /* But remem p[] is a constant & p* is a variable*/
     int h;
     for(h=0;*(p+h);h++);
     p[h-1]= '\0';
