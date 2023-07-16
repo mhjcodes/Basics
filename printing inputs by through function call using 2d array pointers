@@ -39,3 +39,49 @@ void f2(int (*u)[4], int rm, int cm)
 /* important note: the 'q' pointer is used to access and modify the elements of the array pointed to by 'p'
 To clarify,'(*q)[4]' in the parameter declaration int '(*q)[4]' indicates that q is a pointer to an array of size 4. It does not store the address of the p pointer itself, but rather it stores the address of the first element of the array (a[0]).
 Note: when pointer has array A address, array A= p */
+
+
+
+
+method 2
+
+
+#include <stdio.h>
+
+void f1(int (**q)[4], int rm, int cm) ;
+void f2(int (**u)[4], int rm, int cm) ;
+
+int main() 
+{
+    int a[3][4];
+    int (*p)[4] = a;
+    f1(&p,3,4);
+    f2(&p,3,4);
+    return 0;
+}
+
+void f1(int (**q)[4], int rm, int cm) 
+{
+    int i, j;
+    for (i = 0; i < rm; i++) 
+    {
+        printf("Enter four numbers: ");
+        for (j = 0; j < cm; j++) 
+        {
+            scanf("%d", &(*q)[i][j]);
+        }
+    }
+}
+
+void f2(int (**u)[4], int rm, int cm) 
+{
+    int i, j;
+    for (i = 0; i < rm; i++) 
+    {
+        for (j = 0; j < cm; j++) 
+        {
+            printf("%d ", (*u)[i][j]);
+        }
+        printf("\n");
+    }
+}
