@@ -35,3 +35,27 @@ void display(struct Book b)
 {
     printf("\n%d  %s  %f",b.bookid, b.title, b.price);
 }
+
+
+
+use of struct pointers
+
+
+
+#include<stdio.h>
+struct person
+{
+    char name[50];
+    int age;
+    int income;
+};
+
+int main()
+{
+    struct person A={"Yash",32,50000};
+    struct person *P=&A;
+    printf ("Name: %s\n", (*P).name);
+    printf("Age: %d\n", P->age);
+    printf("Income: %d\n", P->income);
+
+}
