@@ -1,0 +1,115 @@
+#include<iostream>
+#include<string.h>
+#include<stdio.h>
+#include<fstream>
+using namespace std;
+class Book
+{
+    private:
+        int bookid;
+        char title[20];
+        float price;
+    
+    public:
+
+    void displayBook()
+    {
+        cout<<bookid<<"  "<<title<<"  "<<price<<endl;
+    }
+    void inputBook()
+    {
+        cout<<"Enter bookid, title and price: ";
+        cin>>bookid;
+        if(bookid<0)
+            bookid=-bookid;
+        cin.ignore();
+        cin.getline(title,20);
+        cin>>price;
+    }
+    void store();
+    void viewAllBooks();
+};
+void Book::store()
+{
+    ofstream fout;
+    fout.open("bookfile.dat",ios::app|ios::binary);
+    fout.write((char*)this,sizeof(*this));
+    fout.close();
+}
+void Book::viewAllBooks()
+{
+    ifstream fin;
+    fin.open("bookfile.dat",ios::in|ios::binary);
+    if(!fin)
+        cout<<"File Not Found";
+    else
+    {
+        fin.read((char*)this,sizeof(*this));
+        while(!fin.eof())
+        {
+            displayBook();
+            fin.read((char*)this,sizeof(*this));
+        }
+    }
+    fin.close();
+}
+int menu()
+{
+    int choice;
+    cout<<"\n1. Store new Book Record";
+    cout<<"\n2. View All Book Records";
+    cout<<"\n3. Exit";
+    cout<<"\n\nEnter your choice";
+    cin>>choice;
+    return choice;
+}
+int main()
+{
+    Book b1;
+    while(true)
+    {
+        switch(menu())
+        {
+            case 1:
+                b1.inputBook();
+                b1.store();
+                break;
+            case 2:
+                b1.viewAllBooks();
+                break;
+            case 3:
+                exit(0);
+            default:
+                cout<<"Invalid Choice";
+
+        }
+    }
+    
+}
+
+
+
+Explaination snippet
+
+
+
+class MyClass {
+public:
+    int x;
+};
+
+int main() {
+    MyClass obj;
+    obj.x = 42;
+
+    // Casting the object pointer to a char pointer
+    char* charPtr = (char*)&obj;
+
+    // Now charPtr points to the same memory location as obj,
+    // but you can treat it as a sequence of bytes
+    for (int i = 0; i < sizeof(obj); ++i) {
+        std::cout << charPtr[i] << " ";
+    }
+
+    return 0;
+}
